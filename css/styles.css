@@ -1,0 +1,274 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 3.25rem;
+    color: rgb(60, 72, 88);
+}
+
+p {
+    font-size: 1rem;
+    color: rgb(140, 147, 156);
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    color: rgb(116, 80, 233);
+    text-align: center;
+    box-shadow: rgb(116, 80, 233) 0px 3px 0px 0px;
+    border-radius: 100px;
+    padding: .5rem 1.25rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(116, 80, 233);
+    border-image: initial;
+    text-decoration: none;
+    transition: all 0.15s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(116, 80, 233);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+
+/********* Nav-bar section *******/
+
+.navigation {
+    margin: 20px auto;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 78px;
+    padding: 20px 0 20px 0;
+    background-color: #fff;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-link li {
+    margin-right: 25px;
+}
+
+.logo img {
+    width: 45%;
+}
+
+@media (max-width :720px) {
+    .logo img {
+        width: 45%;
+    }
+    .nav-link {
+        width: 30%;
+    }
+    .nav-link li a button {
+        font-size: .6rem;
+        padding: .15rem .4rem;
+    }
+}
+
+
+/*********** NAv-bar section ends *********/
+
+
+/******** Hero Section Starts *******/
+
+#hero {
+    max-width: 630px;
+    margin: 30px auto;
+}
+
+.hero-text h1,
+.hero-text p {
+    text-align: center;
+}
+
+.hero-button,
+.cta-button {
+    max-width: 300px;
+    margin: 25px auto;
+}
+
+.hero-button button {
+    margin: auto;
+    padding: .65rem 1.5rem;
+    width: 100%;
+}
+
+
+/******* CTA section *******/
+
+.cta-img {
+    width: 80%;
+    margin: 25px auto 0;
+    z-index: -3;
+}
+
+.cta-img img {
+    z-index: -3;
+}
+
+.cta-button button {
+    background-color: rgb(116, 80, 233);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    box-shadow: none;
+    margin: auto;
+    padding: .65rem 1.5rem;
+    width: 100%;
+}
+
+@media (min-width:900px) {
+    .cta-button button {
+        position: relative;
+        bottom: 320px;
+    }
+}
+
+
+/********* Features Scetion ********/
+
+#features h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 12px auto 30px;
+}
+
+.features-list {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.drag-img {
+    max-width: 30px;
+    margin: 0 0 10px;
+}
+
+.drag,
+.privacy,
+.custom {
+    margin-bottom: 20px;
+}
+
+
+/******* Footer Section ******/
+
+footer {
+    background-color: #7450E9;
+    width: 100%;
+    min-height: 300px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.footer-text span {
+    color: #BEADF5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin: 20 auto;
+}
+
+.footer-text h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0;
+}
+
+.footer-text h4 {
+    color: #FDD54B;
+    font-size: 100px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-text p {
+    font-size: 16px;
+    color: #E7E1FB;
+    line-height: 25px;
+    width: 40%;
+    margin: 0 auto 40px;
+}
+
+.footer-button {
+    max-width: 300px;
+    margin: 25px auto;
+}
+
+.footer-button button {
+    margin: auto;
+    padding: .65rem 1.5rem;
+    width: 100%;
+}
+
+.footer-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 12px auto;
+    color: white;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .footer-links {
+        flex-direction: column;
+    }
+}
+
+.footer-links li,
+.footer-links li a {
+    color: white;
+    margin-bottom: 12px;
+}
