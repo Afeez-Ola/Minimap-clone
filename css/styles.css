@@ -237,7 +237,8 @@ footer {
     font-size: 16px;
     color: #E7E1FB;
     line-height: 25px;
-    width: 40%;
+    /* width: 40%; */
+    max-width: 200px;
     margin: 0 auto 40px;
 }
 
